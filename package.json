@@ -61,7 +61,9 @@
     "audit:resolve": "SHELL=sh resolve-audit",
     "audit:check": "SHELL=sh check-audit",
     "dep:check": "npx ncu -e 2",
-    "dep:update": "npx ncu -u"
+    "dep:update": "npx ncu -u",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@hapi/basic": "5.1.1",
@@ -76,7 +78,7 @@
     "@mojaloop/central-services-logger": "8.6.0",
     "@mojaloop/central-services-metrics": "8.3.0",
     "@mojaloop/central-services-shared": "8.7.1",
-    "@now-ims/hapi-now-auth": "2.0.0",
+    "@now-ims/hapi-now-auth": "2.0.1",
     "blipp": "4.0.1",
     "commander": "4.1.0",
     "docdash": "1.1.1",
@@ -90,7 +92,8 @@
     "npm-run-all": "4.1.5",
     "parse-strings-in-object": "2.0.0",
     "rc": "1.2.8",
-    "uuid4": "1.1.4"
+    "uuid4": "1.1.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/jest": "24.0.25",
@@ -112,5 +115,6 @@
   },
   "generator-swaggerize": {
     "version": "4.1.0"
-  }
+  },
+  "snyk": true
 }
