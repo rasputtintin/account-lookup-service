@@ -81,7 +81,7 @@
     "commander": "4.1.0",
     "docdash": "1.1.1",
     "hapi-auth-bearer-token": "6.2.1",
-    "hapi-openapi": "1.2.6",
+    "hapi-openapi": "2.0.2",
     "hapi-swagger": "10.3.0",
     "json-rules-engine": "5.0.0",
     "knex": "0.20.7",
